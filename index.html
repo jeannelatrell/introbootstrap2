@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Intro to Bootstrap 5</title>
+  </head>
+  <body>
+    <div class="container-fluid p-5 bg-success text-white text-center">
+      <h1>JOLLIBEE</h1>
+      <p>Bida ang Saya!</p>
+      <p>Welcome!</p>
+    </div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image/1.jpg"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="600px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/2.jpg"
+            alt="abstract2"
+            class="d-block"
+            style="width: 100%"
+            height="600px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/3.jpg"
+            alt="abstract3"
+            class="d-block"
+            style="width: 100%"
+            height="600px"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Our Story</h3>
+          <p>
+            
+            Since our humble beginnings in 1978, Jollibee has grown to become the Philippines' largest fast food chain, with over 1,500 stores nationwide and a presence in 17 countries worldwide. Our commitment to serving great-tasting, high-quality food at affordable prices has made us a favorite among Filipinos and food lovers everywhere.
+
+
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Introduction</h3>
+          <p>
+            From our iconic Chickenjoy – crispy fried chicken that's juicy on the inside – to our flavorful Jolly Spaghetti and mouthwatering Yumburger, our menu offers something for everyone. We also serve a variety of other delicious options, including burgers, fries, pies, breakfast dishes, and desserts, ensuring there's always a tasty treat waiting for you at Jollibee.
+
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Our Values:
+        </h3>
+          <p>
+            At Jollibee, we believe in putting our customers first and delivering exceptional service with a smile. We're dedicated to upholding the highest standards of food quality, cleanliness, and customer satisfaction in every store, every day. Our commitment to excellence has earned us the trust and loyalty of millions of customers around the world.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="container mt-3">
+            <h2>Delivery:
+</h2>
+
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="image/Jollibee-Delivery.jpeg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Can't make it to our store? No problem! </h4>
+                <p class="card-text">
+                   Simply place your order online or by phone, and our friendly delivery team will ensure your meal arrives hot and fresh.
+                </p>
+                <div class="container mt-3">
+                    
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                      See Profile
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Modal body..
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <br />
+
+            <img src="image/13.jpg" class="rounded" alt="abstract" height="400px" width="400px">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="container mt-3">
+            <h2>Takeout</h2>
+
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="image/5.png"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Need a quick meal on the run? </h4>
+                <p class="card-text">
+                    Simply place your order at the counter, and we'll pack it up for you to enjoy wherever you go.   
+                </p>
+                <div class="container mt-3">
+           
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                      See Profile
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Modal body..
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <br />
+
+            <img src="image/12.jpg" class="img-thumbnail" alt="abstract2" height="400px" width="400px">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="container mt-3">
+            <h2>Online Ordering</h2>
+
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="image/10.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Can't make it to us? </h4>
+                <p class="card-text">
+                    Simply browse our menu, customize your order, and pay securely online for quick and easy pickup or delivery.
+                </p>
+                <div class="container mt-3">
+              
+                  
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                      See Profile
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Modal body..
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <br />
+
+            <img src="image/11.jpg" class="rounded-circle" alt="abstract3" height="400px" width="400px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://https://www.facebook.com/JollibeePhilippines/"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/"> Jollibee Philippines</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
